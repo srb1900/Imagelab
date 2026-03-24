@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageLab - Merge PDF</title>
+    <link rel="stylesheet" href="elements.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-icon">
+          <img src="imgicon.svg" alt="">
+      </div>
+      <span class="logo-text">ImageLab</span>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- 🔙 Back Button -->
+    <button class="btn-back" onclick="window.location.replace('index.html')">
+  <img src="gobk.svg" alt="" width="20" height="20">
+  <span>Go Back</span>
+</button>
+
+    <!-- 🧠 Title -->
+    <h1>Merge Documents (PDF)</h1>
+
+    <!-- 📤 Upload Box -->
+    <div class="upload-box" id="uploadBox">
+
+      <input type="file" id="fileInput" accept="application/pdf" hidden multiple>
+
+      <div class="upload-icon">
+        <img src="up.svg" alt="">
+      </div>
+
+      <p class="primary-text">
+        Drop PDFs here or click to browse
+      </p>
+
+      <p class="secondary-text">
+        Multiple files supported
+      </p>
+
+    </div>
+
+    <!-- 📄 File List -->
+    <ul id="fileList" style="margin-top: 20px;"></ul>
+
+    <!-- 🔘 Merge Button -->
+    <button id="mergeBtn" class="merge-btn" style="display:none;">
+      Merge PDFs
+    </button>
+
+  </main>
+
+  <!-- ⚠️ PDF LIBRARY (REQUIRED) -->
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+
+  <!-- 🚀 Your JS -->
+  <script src="pdfmerge.js"></script>
+
+</body>
+</html>

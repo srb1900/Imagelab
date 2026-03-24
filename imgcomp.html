@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageLab - image compressor</title>
+    <link rel="stylesheet" href="elements.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-icon">
+          <img src="imgicon.svg" alt="">
+      </div>
+      <span class="logo-text">
+          ImageLab
+      </span>
+    </div>
+  </header>
+
+  <main class="content">
+    <button class="btn-back" onclick="window.location.replace('index.html')">
+  <img src="gobk.svg" alt="" width="20" height="20">
+  <span>Go Back</span>
+</button>
+
+    <h1>COMPRESS YOUR IMAGE</h1>
+
+    <div class="upload-box" id="uploadBox">
+    <input type="file" id="fileInput" accept="image/png, image/jpeg, image/webp" hidden>
+
+    <div class="upload-icon">
+        <img src="up.svg" alt="">
+    </div>
+
+    <p class="primary-text">
+        Drop an image here or click to browse
+    </p>
+
+    <p class="secondary-text">
+        JPG, PNG, or WEBP
+    </p>
+</div>
+  </main>
+  
+  <script src="imgcomp.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg"
+     stroke="#0096ff" stroke-width="2"
+     stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Left file -->
+  <rect x="3" y="5" width="6" height="8" rx="1.5"></rect>
+
+  <!-- Right file -->
+  <rect x="15" y="5" width="6" height="8" rx="1.5"></rect>
+
+  <!-- Merge flow lines -->
+  <path d="M6 13v2a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-2"></path>
+
+  <!-- Merge arrow -->
+  <!-- Arrow shaft (slightly lower start) -->
+<path d="M12 22v-9"></path>
+
+<!-- Arrow head (shifted down too) -->
+<path d="M9.5 20.9L12 23.4l2.5-2.5"></path>
+
+</svg>
